@@ -15,6 +15,9 @@
     padding: 20px 25px;
     border: none;
 }
+.btn-primary:hover{
+    cursor: pointer;
+}
 
 .text-light-gray {
     color: #727272;
@@ -75,7 +78,7 @@ nav li>a {
 }
 
 /* main section styles */
-main {
+main, footer {
     max-width: 1440px;
     margin: 80px auto;
 }
@@ -129,9 +132,11 @@ main {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
-.feature-img img{
+
+.feature-img img {
     margin-left: 90px;
 }
+
 .ten-year-badge {
     border-radius: 8px;
     background: #FF900E;
@@ -197,6 +202,19 @@ height: 160px; */
     display: none;
 }
 
+/* footer styles */
+.footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+.footer>p{
+    color: #424242;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 38px;
+}
+
 /* responsive styles */
 /* mobile screen devices */
 @media screen and (max-width: 576px) {
@@ -205,19 +223,23 @@ height: 160px; */
     }
 
     nav,
-    .teams-container, .features,
+    .teams-container,
+    .features,
     .facts-card-container,
     .img-container {
         flex-direction: column;
     }
-    .feature-img img{
+
+    .feature-img img {
         width: 80%;
         margin-left: 70px;
     }
-    .ten-year-badge{
+
+    .ten-year-badge {
         width: 70%;
         margin-top: 25px;
     }
+
     nav li {
         margin-right: 40px;
     }
@@ -242,7 +264,7 @@ height: 160px; */
     }
 
     .img-container img {
-        width: 100px;
+        width: 90px;
     }
 }
 
